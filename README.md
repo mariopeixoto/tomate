@@ -9,4 +9,4 @@ Download the distribution package by clicking [here](https://github.com/mariopei
 
 # Acknowledgements
 
-TOMaTE was developed as part of a research project funded by CNPq (National Counsel of Technological and Scientific Development).
+TOMaTE was developed as part of a research project funded by CNPq (National Counsel of Technological and Scientific Development) and mentored by Prof. Eliana Almeida at UFAL (Federal University of Alagoas), Brazil.

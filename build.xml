@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<project name="tomate" basedir=".">
+
+	<description>TOMaTE</description>
+
+	<property name="src" value="${basedir}/src" />	
+	<property name="dist" value="${basedir}/dist" />
+	<property name="build" value="${basedir}/build" />
+	<property name="lib" value="${basedir}/lib" />
+	<property name="icons" value="${src}/br/ufal/cpmat/tomate/view/icons" />
+		  
+	<property name="version" value="1.0.1b" />
+
+	<property name="jarname" value="tomate-${version}.jar"/>
+	
+	<property name="dist.version.dir" value="${dist}/tomate-${version}" />
+	
+	<fileset dir="${lib}" id="jars">
+	      <include name="*.jar"/>
+	</fileset>
+	<pathconvert pathsep=" " property="arquivosjar" refid="jars">
+		<map from="${lib}" to="lib" />
+	</pathconvert>
+	
+	<path id="lib.jars">
+		<fileset dir="${lib}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	
+	<target name="init">
+	    <echo>Criando os diretórios</echo>
+	    <mkdir dir="${build}" />
+	    <mkdir dir="${dist}" />
+	    <mkdir dir="${dist.version.dir}" />
+	</target> 	
+	
+	<target name="compile" depends="init">
+	    <echo>Compilando</echo>
+	    <javac srcdir="${src}" destdir="${build}" classpathref="lib.jars"/>
+	    <copy todir="${build}/br/ufal/cpmat/tomate/view/icons">
+		<fileset dir="${icons}" />
+	    </copy>
+	</target>
+	
+	<target name="dist" depends="compile">
+	    <echo>Gerando o .jar</echo>
+	    <jar jarfile="${dist.version.dir}/${jarname}" basedir="${build}">
+	    	
+            	<manifest>
+              		<attribute name="Built-By" value="Mário Peixoto Costa Neto"/>
+              		<attribute name="Class-Path" value="${arquivosjar}"/>
+              		<attribute name="Main-Class" value="br.ufal.cpmat.tomate.view.Main"/>
+            	</manifest>
+	    </jar>
+	    <copy todir="${dist.version.dir}/lib">
+		<fileset dir="${lib}" />
+	    </copy>
+	    <copy todir="${dist.version.dir}">
+		<fileset file="config.xml"/>
+	    </copy>
+	</target>	
+
+	<target name="undist">
+	    <echo>Excluindo jar</echo>
+		<delete dir="\${build}" />
+		<delete dir="\${dist}" /> 		
+	</target>
+
+</project>

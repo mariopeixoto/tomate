@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/13/tomate/trunk/src/br/ufal/cpmat/tomate/view
+END
+Main.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/13/tomate/trunk/src/br/ufal/cpmat/tomate/view/Main.java
+END
+TomateView.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/15/tomate/trunk/src/br/ufal/cpmat/tomate/view/TomateView.java
+END
+TuringMachine.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/16/tomate/trunk/src/br/ufal/cpmat/tomate/view/TuringMachine.java
+END
+Transition.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/13/tomate/trunk/src/br/ufal/cpmat/tomate/view/Transition.java
+END
+MainWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/15/tomate/trunk/src/br/ufal/cpmat/tomate/view/MainWindow.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/13/tomate/trunk/src/br/ufal/cpmat/tomate/view/observers
+END
+ResultObserver.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/13/tomate/trunk/src/br/ufal/cpmat/tomate/view/observers/ResultObserver.java
+END
+TapeObserver.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/13/tomate/trunk/src/br/ufal/cpmat/tomate/view/observers/TapeObserver.java
+END
+StateObserver.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/13/tomate/trunk/src/br/ufal/cpmat/tomate/view/observers/StateObserver.java
+END
